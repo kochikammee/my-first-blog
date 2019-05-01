@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>lollll</title>
+    <title>lol</title>
 </head>
 <body>
-<h1>heyyyy</h1>
-
+<h1>Welcome to shivams blog</h1>
+    {% for post in posts %}
+<div>
+    <p>published----{{ post.published_date }}</p>
+    <h2><a href="">{{ post.title }}</a> </h2>
+    <p>{{ post.text|linebreaksbr }}</p>
+</div>
+{% endfor %}
 </body>
-</html>
